@@ -1,4 +1,5 @@
-import { delay, CANCEL, detach } from 'redux-saga';
+import { delay } from '@redux-saga/delay-p';
+import { CANCEL, detach } from 'redux-saga';
 import { actionCreator } from './createDispatcher';
 import * as sagaEffects from 'redux-saga/effects';
 

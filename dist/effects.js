@@ -5,6 +5,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
+const { delay } = require('@redux-saga/delay-p');
+
 var _reduxSaga = require("redux-saga");
 
 var _createDispatcher = require("./createDispatcher");
@@ -30,7 +32,7 @@ var dispatch = function dispatch(type, payload, meta, data) {
 };
 
 var _default = _objectSpread({
-  delay: _reduxSaga.delay,
+  delay: delay,
   CANCEL: _reduxSaga.CANCEL,
   detach: _reduxSaga.detach
 }, sagaEffects, {
